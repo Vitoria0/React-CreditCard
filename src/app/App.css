@@ -1,0 +1,43 @@
+
+*{
+  font-family: 'Jost', 'Poppins', 'Roboto' sans-serif ;
+  line-height: 110%;
+}
+
+
+.logo {
+  height: 8em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ffffff);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #00a2ff);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 8s linear;
+  }
+}
+
+a {
+  color: #E80070 !important; /* Define a cor dos links */
+  text-decoration: none  !important; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+  text-decoration: underline  !important; /* Adiciona um sublinhado quando o link é hovered */
+}
